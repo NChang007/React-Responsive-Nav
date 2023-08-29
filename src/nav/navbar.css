@@ -1,0 +1,58 @@
+.navbar {    
+    padding-block: 1em;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+}
+.navbar-collaps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-list {
+    display: flex;
+    place-items: center;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+span {
+    color: #fff;
+}
+.btn {
+    padding: 0.2em;
+    border: 1px solid white;
+    border-radius: 0.156em;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    place-items: center;
+    font-size: 1.3em;
+}
+
+.navigation-control {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar-collaps {
+        flex-direction: column;
+    }
+    .navbar-collaps div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation-list {
+        flex-direction: column;
+    }
+    .navbar-navigation{
+        display: none !important;
+        transition: all 250ms;
+    }
+}
+
+.d-flex {
+    display: flex !important;
+}
