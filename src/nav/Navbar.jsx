@@ -6,6 +6,7 @@ const Navbar = () => {
     const handleOpenNav = (e) => {
         e.preventDefault()
         document.querySelector('.navbar-navigation').classList.toggle('d-flex')
+        console.log(document.querySelector('.navbar-navigation').classList.toggle('d-flex'));
     }
     return (
         <nav className='navbar'>
@@ -22,7 +23,7 @@ const Navbar = () => {
                             <RxHamburgerMenu/>
                         </button>
                     </div>
-                </div>=
+                </div>
                 
                 <div className='navbar-navigation'>
                     <ul className='navigation-list'>
